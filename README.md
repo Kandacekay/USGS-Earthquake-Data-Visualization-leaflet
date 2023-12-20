@@ -1,16 +1,26 @@
-# leaflet-challenge
-
+# USGS Earthquake Data Visualization-leaflet
 ## Background
-The United States Geological Survey, or USGS for short, is responsible for providing scientific data about natural hazards, the health of our ecosystems and environment, and the impacts of climate and land-use change. Their scientists develop new methods and tools to supply timely, relevant, and useful information about the Earth and its processes.
+The United States Geological Survey (USGS) plays a crucial role in providing scientific data related to natural hazards, ecosystem health, and the impacts of climate and land-use change. As part of their mission, the USGS collects vast amounts of earthquake data from around the world on a daily basis. However, they face a challenge in effectively visualizing this data to educate the public and other government organizations about the Earth's seismic activities.
 
-The USGS is interested in building a new set of tools that will allow them to visualize their earthquake data. They collect a massive amount of data from all over the world each day, but they lack a meaningful way of displaying it. In this challenge, you have been tasked with developing a way to visualize USGS data that will allow them to better educate the public and other government organizations (and hopefully secure more funding) on issues facing our planet.
+## Project Overview
+This project aims to develop a powerful and informative tool for visualizing USGS earthquake data. The provided code utilizes Leaflet, a popular JavaScript library for interactive maps, to create an intuitive map representation of earthquake occurrences.
 
-### Create the Earthquake Visualization
+## Implementation Details
+### HTML and CSS
+- The HTML file (index.html) includes the necessary structure for the map and links to essential stylesheets and libraries.
+- The CSS file (style.css) ensures a clean and responsive design for the map and legend.
 
-1. Dataset Acquisition:
-   - Obtain earthquake data from the USGS GeoJSON Feed, selecting a dataset of interest.
-2. Data Import and Visualization:
-   - Utilize Leaflet to create a map plotting all earthquakes based on their longitude and latitude.
-   - Customize data markers to reflect earthquake magnitude (size) and depth (color).
-   - Include informative popups for each earthquake marker.
-   - Create a legend to provide context for the map data.
+## JavaScript (logic.js)
+- The JavaScript code is responsible for loading earthquake data in GeoJSON format and rendering it on the Leaflet map.
+- The map is initialized with a default view, and an OpenStreetMap tile layer is added as the base layer.
+- Each earthquake is represented by a dynamically sized and colored circle marker based on its magnitude and depth.
+- A legend is incorporated to provide a visual guide for interpreting marker colors in relation to depth ranges.
+
+## How to Use
+1. Open index.html in a web browser.
+2. Explore the interactive map to visualize recent earthquake data.
+3. Use the legend to understand the relationship between marker colors and earthquake depths.
+   
+### Additional Information
+- Leaflet version: 1.9.4
+- D3 version: 7.0.0
